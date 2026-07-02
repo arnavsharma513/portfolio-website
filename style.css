@@ -1,0 +1,1062 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    /* background-image: url('bg-img6.jpg');*/
+    /* background-color: #050505;*/
+    background-image: linear-gradient(135deg, #050505 0%, #13142b 40%, #2a1f5a 70%, #090909 100%);
+    padding-top: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px;
+    background-color: rgb(15, 15, 15, 0.45);
+    height: 70px;
+    align-items: center;
+    width: 90vw;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 2 8px 32px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: white;
+    animation: nav-in 2s ease-out;
+}
+
+.buttons {
+    display: flex;
+    gap: 14px;
+}
+
+.logo {
+    font-family: "Uncial Antiqua", serif;
+    font-size: 30px;
+}
+
+.buttons a {
+    background-color: #1b1235;
+    text-decoration: none;
+    color: black;
+    border: none;
+    font-family: "Google Sans Flex", sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    color: #06b6d4;
+    padding: 7px;
+    border-radius: 75px;
+    border: 1px solid black;
+    transition: all 0.4s ease-in-out;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+}
+
+.buttons a:hover {
+    font-size: 25px;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-weight: bold;
+    color: white;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    font-family: "Google Sans Flex", sans-serif;
+}
+
+.in-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    width: 50vw;
+    color: white;
+    font-family: "Google Sans Flex", sans-serif;
+    background-color: rgb(15, 15, 15, 0.35);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 2 8px 32px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    border-radius: 40px;
+    animation: nav-in 2s ease-out;
+
+}
+
+.intro .in-card img {
+    width: 300px;
+    height: 250px;
+    border-radius: 0%;
+    border: 0px solid rgb(0, 0, 0);
+    margin-bottom: 20px;
+    animation: fadeIn 3s ease-out, jump 2s ease-in-out 2;
+    object-fit: cover;
+    object-position: center top;
+
+}
+
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: "Google Sans Flex", sans-serif;
+}
+
+#card {
+    width: 70vw;
+    height: 70vh;
+    border-radius: 20px;
+    border: 1px solid black;
+    /* background-image: linear-gradient(125deg, rgba(41, 202, 20, 0.671), rgba(50, 156, 36, 0.493), rgba(30, 255, 0, 0.37), rgba(50, 156, 36, 0.247), rgba(30, 255, 0, 0.178), rgb(0, 0, 0)); */
+    background-image: linear-gradient(135deg, #090909, #1b1235, #090909, #1b1235);
+    animation: reveal-in 2s ease-out;
+    animation-timeline: view();
+    animation-range: entry 10% contain 40%;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 2 8px 32px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+#card h2 {
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+     animation: reveal-in 4s ease-out;
+    animation-timeline: view();
+    animation-range: entry 10% contain 40%;
+}
+
+#card p {
+    text-align: center;
+    padding: 16px;
+    font-size: 25px;
+     animation: reveal-in 4s ease-out;
+    animation-timeline: view();
+    animation-range: entry 10% contain 40%;
+}
+
+.progress {
+    top: 0;
+    left: 0;
+    height: 5px;
+    position: fixed;
+    background-color: #007bff;
+    animation: fill-progress linear;
+    animation-timeline: scroll(nearest); 
+    z-index:1005;
+}
+
+
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-family: "Google Sans Flex", sans-serif;
+}
+
+.projects h2 {
+    font-size: 50px;
+    padding: 20px;
+    outline: 2px solid white;
+    border-radius: 20px;
+    animation: reveal-in 2s ease-out;
+    animation-timeline: view();
+    animation-range: entry 10% contain 40%;
+}
+
+.projects .project-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 70vw;
+    height: 50vh;
+    background-image: linear-gradient(150deg, rgba(7, 13, 49, 0.568), rgba(180, 93, 93, 0.13));
+    border-radius: 20px;
+    box-shadow: 2 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    animation: reveal-in 2s ease-out;
+    animation-timeline: view();
+    animation-range: entry 10% contain 40%;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 2 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    animation: reveal-in 4s ease-out;
+    animation-timeline: view();
+    animation-range: entry 10% contain 40%;
+}
+
+#img-pj img {
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#img-pj img:hover {
+    transform: scale(1.01);
+}
+
+#arrow {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 60px;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+#arrow:hover {
+    transform: scale(1.1);
+    background-color: green;
+}
+
+.contact {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Google Sans Flex", sans-serif;
+    display: flex;
+    direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.contact h2 {
+    font-size: 50px;
+    padding: 20px;
+    outline: 2px solid white;
+    border-radius: 20px;
+    animation: reveal-in 2s ease-out;
+    animation-timeline: view();
+    animation-range: entry 10% contain 40%;
+     animation: reveal-in 4s ease-out;
+    animation-timeline: view();
+    animation-range: entry 10% contain 30%;
+}
+
+.data {
+    margin-top: 20px;
+    height: 60vh;
+    border-radius: 20px;
+    border: 1px solid rgb(255, 225, 225);
+    width: 70vw;
+    padding: 20px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(145deg, #050505, #10203d, #050505, #10203d, #050505, #10203d);
+     animation: reveal-in 4s ease-out;
+    animation-timeline: view();
+    animation-range: entry 10% contain 30%;
+}
+
+.data p {
+    font-size: 15px;
+     animation: reveal-in 4s ease-out;
+    animation-timeline: view();
+    animation-range: entry 10% contain 30%;
+}
+
+.data ul {
+    margin-top: 20px;
+    list-style-type: none;
+    font-size: 30px;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid white;
+    color: white;
+     animation: reveal-in 4s ease-out;
+    animation-timeline: view();
+    animation-range: entry 10% contain 30%;
+    width: 60%;
+}
+
+.data ul li:nth-child(1) {
+    border: 2px dotted white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    
+}
+.data ul li{
+     animation: reveal-in 4s ease-out;
+    animation-timeline: view();
+    animation-range: entry 10% contain 30%;
+}
+
+.data ul li:nth-child(1):hover {
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.06);
+    color: black;
+    border: 2px solid black;
+}
+
+.data ul li:nth-child(2) {
+    border: 2px dotted white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.data ul li:nth-child(2):hover {
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.06);
+    color: black;
+    border: 2px solid black;
+}
+
+.data ul li:nth-child(3) {
+    border: 2px dotted white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    
+}
+
+.data ul li:nth-child(3):hover {
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.06);
+    color: black;
+    border: 2px solid black;
+}
+
+.data ul li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    gap: 5px;
+    transition: all 0.3s ease;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+     
+}
+
+.data ul li a:hover {
+    color: black;
+}
+
+.data ul li svg {
+    width: 28px;
+    height: 28px;
+    transition: all 0.3s ease;
+}
+
+.scroll {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0px solid black;
+    object-fit: fill;
+}
+
+.scroll svg {
+    width: 100%;
+    height: 100%;
+}
+
+.scroll a {
+    text-decoration: none;
+    color: purple;
+}
+
+.footer {
+    width: 100vw;
+    height: 50px;
+    font-size: 10px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer svg {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.footer p {
+    margin-left: 15px;
+}
+.title-pj h3 {
+    font-size: 18.72px;
+}
+
+.title-pj p {
+    font-size: 16px;
+}
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
+@keyframes reveal-in {
+    from {
+        opacity: 0;
+        transform: translateY(90px) scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes fill-progress {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+@keyframes nav-in {
+    from {
+        opacity: 0;
+        transform: translatex(190px) scale(0.2);
+    }
+
+    to {
+        opacity: 1;
+        transform: translatex(0) scale(1);
+    }
+}
+
+@media screen and (max-width:700px) {
+    .data {
+        margin-top: 20px;
+        height: 60%;
+        border-radius: 20px;
+        border: 1px solid rgb(255, 225, 225);
+        width: 80vw;
+        padding: 20px;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(145deg, #050505, #10203d, #050505, #10203d, #050505, #10203d);
+    }
+
+    nav {
+        display: flex;
+        padding: 13px;
+        background-color: rgb(15, 15, 15, 0.45);
+        height: 70px;
+        align-items: center;
+        width: 90vw;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 2 8px 32px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        margin: auto;
+        margin-top: 10px;
+        border-radius: 10px;
+        color: white;
+        animation: nav-in 2s ease-out;
+    }
+
+    .logo {
+        font-family: "Uncial Antiqua", serif;
+        font-size: 20px;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 3px;
+        margin-left: 4px;
+    }
+
+    .buttons a {
+        background-color: #1b1235;
+        text-decoration: none;
+        color: black;
+        border: none;
+        font-family: "Google Sans Flex", sans-serif;
+        font-size: 12px;
+        cursor: pointer;
+        color: #06b6d4;
+        padding: 7px;
+        border-radius: 75px;
+        border: 1px solid black;
+        transition: all 0.4s ease-in-out;
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        color: white;
+        font-family: "Google Sans Flex", sans-serif;
+    }
+
+    .in-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 70vh;
+        width: 90vw;
+        color: white;
+        font-family: "Google Sans Flex", sans-serif;
+        background-color: rgb(15, 15, 15, 0.35);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 2 8px 32px rgba(0, 0, 0, 0.3);
+        z-index: 1003;
+        border-radius: 40px;
+        animation: nav-in 2s ease-out;
+    }
+
+    .intro .in-card img {
+        width: 300px;
+        height: 250px;
+        border-radius: 0%;
+        border: 0px solid rgb(0, 0, 0);
+        margin-bottom: 20px;
+        animation: fadeIn 3s ease-out, jump 2s ease-in-out 2;
+        object-fit: cover;
+        object-position: center top;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        font-family: "Google Sans Flex", sans-serif;
+    }
+
+    #card {
+        width: 85vw;
+        height: 80vh;
+        border-radius: 20px;
+        border: 1px solid black;
+        background-image: linear-gradient(135deg, #090909, #1b1235, #090909, #1b1235);
+        animation: reveal-in 2s ease-out;
+        animation-timeline: view();
+        animation-range: entry 10% contain 40%;
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 2 8px 32px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+    }
+
+    #card h2 {
+        text-align: center;
+        padding: 20px;
+        font-size: 28px;
+    }
+
+    #card p {
+        text-align: center;
+        padding: 16px;
+        font-size: 16px;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(0, 0, 0);
+        height: 100vh;
+        width: 100vw;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        font-family: "Google Sans Flex", sans-serif;
+    }
+
+    .projects .project-cards {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        margin-top: 20px;
+        width: 80vw;
+        height: 90vh;
+        background-image: linear-gradient(150deg, rgba(7, 13, 49, 0.568), rgba(180, 93, 93, 0.13));
+        border-radius: 20px;
+        box-shadow: 2 8px 32px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        animation: reveal-in 2s ease-out;
+        animation-timeline: view();
+        animation-range: entry 10% contain 40%;
+    }
+
+    .project-card {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        padding: 10px;
+        box-shadow: 2 8px 32px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        animation: reveal-in 4s ease-out;
+        animation-timeline: view();
+        animation-range: entry 10% contain 40%;
+    }
+
+    #img-pj img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .data {
+        margin-top: 20px;
+        height: 60%;
+        border-radius: 20px;
+        border: 1px solid rgb(255, 225, 225);
+        width: 80vw;
+        padding: 20px;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(145deg, #050505, #10203d, #050505, #10203d, #050505, #10203d);
+    }
+
+    .data p {
+        font-size: 15px;
+    }
+
+    .data ul {
+        margin-top: 10px;
+        list-style-type: none;
+        font-size: 20px;
+        border-radius: 20px;
+        border: 1px solid black;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border: 1px solid white;
+        color: white;
+        width: 85%;
+    }
+
+    .data ul li a {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+        transition: all 0.3s ease;
+        align-items: center;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        height: 100%;
+    }
+
+    .scroll {
+        position: fixed;
+        z-index: 1002;
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 0px solid black;
+        object-fit: fill;
+    }
+}
+
+@media screen and (min-height:650px){
+    .data {
+        width: 288px;
+        height: 444px;
+    }
+
+    #card {
+        width: 310px;
+        height: 592px;
+    }
+
+    .projects .project-cards {
+        width: 288px;
+        height: 576px;
+    }
+
+    .project-card {}
+}
+
+@media screen and (min-width:701px) and (max-width:1300px) {
+    .buttons a {
+        font-size: 18px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .in-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 70vh;
+        width: 70vw;
+        color: white;
+        font-family: "Google Sans Flex", sans-serif;
+        background-color: rgb(15, 15, 15, 0.35);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 2 8px 32px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+        border-radius: 40px;
+        animation: nav-in 2s ease-out;
+    }
+
+    .intro .in-card img {
+        width: 600px;
+        height: 500px;
+    }
+
+    #card {
+        width: 80vw;
+        height: 70vh;
+    }
+
+    #card h2 {
+        text-align: center;
+        padding: 20px;
+        font-size: 72px;
+    }
+
+    #card p {
+        text-align: center;
+        padding: 16px;
+        font-size: 32px;
+    }
+
+    .projects .project-cards {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 80vw;
+        height: 60vh;
+        flex-direction: column;
+    }
+
+    .data p {
+        font-size: 28px;
+    }
+
+    .data {
+        width: 80vw;
+        height: 70vh;
+        gap: 30px;
+    }
+
+    .data ul {
+
+        height: 50%;
+        width: 80%;
+    }
+
+    .data ul li:nth-child(1) {
+        height: 33%;
+    }
+
+    .data ul li:nth-child(2) {
+        height: 33%;
+    }
+
+    .data ul li:nth-child(3) {
+        height: 33%;
+    }
+
+    .data ul li a {
+        font-size: 48px;
+    }
+
+    .data ul li svg {
+        width: 80px;
+        height: 80px;
+        transition: all 0.3s ease;
+    }
+
+    .scroll {
+        position: fixed;
+        z-index: 1002;
+        bottom: 20px;
+        right: 20px;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        border: 0px solid black;
+        object-fit: fill;
+    }
+
+    .project-card {
+        height: 70%;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        padding: 60px;
+        box-shadow: 2 8px 32px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        animation: reveal-in 4s ease-out;
+        animation-timeline: view();
+        animation-range: entry 10% contain 40%;
+    }
+
+    #img-pj img {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    #title-pj h3 {
+        font-size: 32px;
+    }
+
+    #title-pj p {
+        font-size: 22px;
+    }
+
+    #arrow{
+        font-size:28px;
+    }
+    #arrow svg{
+        width:28px;
+        height:28px;
+    }
+}
+@media screen and (max-height:480px){
+    .intro .in-card img {
+    width: 200px;
+    height: 150px;
+    border-radius: 0%;
+    border: 0px solid rgb(0, 0, 0);
+    margin-bottom: 20px;
+    animation: fadeIn 3s ease-out, jump 2s ease-in-out 2;
+    object-fit: cover;
+    object-position: center top;
+}
+#card h2 {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    animation: reveal-in 4s ease-out;
+    animation-timeline: view();
+    animation-range: entry 10% contain 40%;
+}
+#card p {
+    text-align: center;
+    padding: 2px;
+    font-size: 14px;
+    animation: reveal-in 4s ease-out;
+    animation-timeline: view();
+    animation-range: entry 10% contain 40%;
+}
+.data ul {
+    margin-top: 10px;
+    list-style-type: none;
+    font-size: 12px;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid white;
+    color: white;
+    animation: reveal-in 4s ease-out;
+    animation-timeline: view();
+    animation-range: entry 10% contain 30%;
+    width: 60%;
+	height:80%;
+}
+#img-pj img {
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.contact h2 {
+    font-size: 30px;
+    padding: 20px;
+    outline: 2px solid white;
+    border-radius: 20px;
+    animation: reveal-in 2s ease-out;
+    animation-timeline: view();
+    animation-range: entry 10% contain 40%;
+    animation: reveal-in 4s ease-out;
+    animation-timeline: view();
+    animation-range: entry 10% contain 20%;
+}
+
+.projects h2 {
+    font-size: 30px;
+    padding: 20px;
+    outline: 2px solid white;
+    border-radius: 20px;
+    animation: reveal-in 2s ease-out;
+    animation-timeline: view();
+    animation-range: entry 10% contain 40%;
+}
+    .project-card {
+        height: 60%;
+        width: 80%;
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        padding: 60px;
+        box-shadow: 2 8px 32px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        animation: reveal-in 4s ease-out;
+        animation-timeline: view();
+        animation-range: entry 10% contain 40%;
+    }
+	.data p {
+        font-size: 14px;
+    }
+	    .data ul li a {
+        font-size: 18px;
+    }
+	    .data ul li svg {
+        width: 20px;
+        height: 20px;
+        transition: all 0.3s ease;
+    }
+
+
+}
