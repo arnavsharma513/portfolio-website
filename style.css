@@ -111,7 +111,6 @@ nav {
 
 }
 
-
 .about {
     display: flex;
     flex-direction: column;
@@ -168,8 +167,6 @@ nav {
     animation-timeline: scroll(nearest); 
     z-index:1005;
 }
-
-
 
 .projects {
     display: flex;
@@ -329,7 +326,7 @@ nav {
     gap: 10px;
     border: 1px solid white;
     color: white;
-     animation: reveal-in 4s ease-out;
+    animation: reveal-in 4s ease-out;
     animation-timeline: view();
     animation-range: entry 10% contain 30%;
     width: 60%;
@@ -579,7 +576,22 @@ nav {
         backdrop-filter: blur(18px);
         -webkit-backdrop-filter: blur(18px);
     }
-
+buttons a:hover {
+        background-color: #1b1235;
+        text-decoration: none;
+        color: black;
+        border: none;
+        font-family: "Google Sans Flex", sans-serif;
+        font-size: 12px;
+        cursor: pointer;
+        color: #06b6d4;
+        padding: 7px;
+        border-radius: 75px;
+        border: 1px solid black;
+        transition: all 0.4s ease-in-out;
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+    }
     .intro {
         display: flex;
         flex-direction: column;
@@ -788,7 +800,22 @@ nav {
         width: 288px;
         height: 444px;
     }
-
+.buttons a:hover {
+    background-color: #1b1235;
+    text-decoration: none;
+    color: black;
+    border: none;
+    font-family: "Google Sans Flex", sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    color: #06b6d4;
+    padding: 7px;
+    border-radius: 75px;
+    border: 1px solid black;
+    transition: all 0.4s ease-in-out;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+}
     #card {
         width: 310px;
         height: 592px;
@@ -1057,6 +1084,4 @@ nav {
         height: 20px;
         transition: all 0.3s ease;
     }
-
-
 }
