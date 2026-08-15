@@ -96,6 +96,7 @@ nav {
     z-index: 1000;
     border-radius: 40px;
     animation: nav-in 2s ease-out;
+    margin: 10px;
 
 }
 
@@ -116,10 +117,11 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-color: rgb(0, 0, 0);
+    height: auto;
     color: white;
     font-family: "Google Sans Flex", sans-serif;
+    margin: 20px 55px;
+    padding: 10px 30px;
 }
 
 #card {
@@ -137,13 +139,14 @@ nav {
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 2 8px 32px rgba(0, 0, 0, 0.3);
     z-index: 1000;
+    padding: 20px 30px;
 }
 
 #card h2 {
     text-align: center;
     padding: 20px;
     font-size: 50px;
-     animation: reveal-in 4s ease-out;
+    animation: reveal-in 4s ease-out;
     animation-timeline: view();
     animation-range: entry 10% contain 40%;
 }
@@ -152,7 +155,7 @@ nav {
     text-align: center;
     padding: 16px;
     font-size: 25px;
-     animation: reveal-in 4s ease-out;
+    animation: reveal-in 4s ease-out;
     animation-timeline: view();
     animation-range: entry 10% contain 40%;
 }
@@ -164,20 +167,22 @@ nav {
     position: fixed;
     background-color: #007bff;
     animation: fill-progress linear;
-    animation-timeline: scroll(nearest); 
-    z-index:1005;
+    animation-timeline: scroll(nearest);
+    z-index: 1005;
 }
 
 .projects {
     display: flex;
     flex-direction: column;
-    background-color: rgb(0, 0, 0);
-    height: 100vh;
-    width: 100vw;
+    background-color: transparent;
+    height: auto;
+    width: auto;
     color: white;
     align-items: center;
     justify-content: center;
     font-family: "Google Sans Flex", sans-serif;
+    margin: 15px 50px;
+    padding: 10px 30px;
 }
 
 .projects h2 {
@@ -188,6 +193,7 @@ nav {
     animation: reveal-in 2s ease-out;
     animation-timeline: view();
     animation-range: entry 10% contain 40%;
+    margin-top: 10px;
 }
 
 .projects .project-cards {
@@ -199,7 +205,7 @@ nav {
     padding: 20px;
     margin-top: 20px;
     width: 70vw;
-    height: 50vh;
+    height: auto;
     background-image: linear-gradient(150deg, rgba(7, 13, 49, 0.568), rgba(180, 93, 93, 0.13));
     border-radius: 20px;
     box-shadow: 2 8px 32px rgba(0, 0, 0, 0.3);
@@ -209,6 +215,7 @@ nav {
     animation: reveal-in 2s ease-out;
     animation-timeline: view();
     animation-range: entry 10% contain 40%;
+    padding: 10px;
 }
 
 .project-card {
@@ -261,8 +268,8 @@ nav {
 
 .contact {
     width: 100vw;
-    height: 100vh;
-    background-color: rgb(0, 0, 0);
+    height: auto;
+    background-color: transparent;
     color: white;
     display: flex;
     flex-direction: column;
@@ -273,7 +280,8 @@ nav {
     direction: column;
     align-items: center;
     justify-content: center;
-    
+    margin: 10px;
+
 }
 
 .contact h2 {
@@ -284,7 +292,7 @@ nav {
     animation: reveal-in 2s ease-out;
     animation-timeline: view();
     animation-range: entry 10% contain 40%;
-     animation: reveal-in 4s ease-out;
+    animation: reveal-in 4s ease-out;
     animation-timeline: view();
     animation-range: entry 10% contain 30%;
 }
@@ -301,15 +309,16 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(145deg, #050505, #10203d, #050505, #10203d, #050505, #10203d);
-     animation: reveal-in 4s ease-out;
+    /*   background-image: linear-gradient(145deg, #050505, #10203d, #050505, #10203d, #050505, #10203d);*/
+    background-color: rgba(255, 255, 255, 0.021);
+    animation: reveal-in 2s ease-out;
     animation-timeline: view();
-    animation-range: entry 10% contain 30%;
+    animation-range: entry 5% contain 25%;
 }
 
 .data p {
     font-size: 15px;
-     animation: reveal-in 4s ease-out;
+    animation: reveal-in 4s ease-out;
     animation-timeline: view();
     animation-range: entry 10% contain 30%;
 }
@@ -328,8 +337,9 @@ nav {
     color: white;
     animation: reveal-in 4s ease-out;
     animation-timeline: view();
-    animation-range: entry 10% contain 30%;
+    animation-range: entry 5% contain 10%;
     width: 60%;
+    background-image: linear-gradient(150deg, rgba(7, 13, 49, 0.568), rgba(180, 93, 93, 0.13));
 }
 
 .data ul li:nth-child(1) {
@@ -339,12 +349,13 @@ nav {
     cursor: pointer;
     display: flex;
     align-items: center;
-    
+
 }
-.data ul li{
-     animation: reveal-in 4s ease-out;
+
+.data ul li {
+    animation: reveal-in 4s ease-out;
     animation-timeline: view();
-    animation-range: entry 10% contain 30%;
+    animation-range: entry 5% contain 10%;
 }
 
 .data ul li:nth-child(1):hover {
@@ -377,7 +388,7 @@ nav {
     cursor: pointer;
     display: flex;
     align-items: center;
-    
+
 }
 
 .data ul li:nth-child(3):hover {
@@ -398,7 +409,7 @@ nav {
     width: 100%;
     align-items: center;
     height: 100%;
-     
+
 }
 
 .data ul li a:hover {
@@ -451,6 +462,7 @@ nav {
 .footer p {
     margin-left: 15px;
 }
+
 .title-pj h3 {
     font-size: 18.72px;
 }
@@ -458,6 +470,7 @@ nav {
 .title-pj p {
     font-size: 16px;
 }
+
 @keyframes jump {
     0% {
         transform: translateY(0);
@@ -476,11 +489,12 @@ nav {
     from {
         opacity: 0;
     }
-    
+
     to {
         opacity: 1;
     }
 }
+
 @keyframes reveal-in {
     from {
         opacity: 0;
@@ -502,6 +516,7 @@ nav {
         width: 100%;
     }
 }
+
 @keyframes nav-in {
     from {
         opacity: 0;
@@ -527,7 +542,7 @@ nav {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-image: linear-gradient(145deg, #050505, #10203d, #050505, #10203d, #050505, #10203d);
+        background-image: transparent;
     }
 
     nav {
@@ -576,7 +591,8 @@ nav {
         backdrop-filter: blur(18px);
         -webkit-backdrop-filter: blur(18px);
     }
-buttons a:hover {
+
+    buttons a:hover {
         background-color: #1b1235;
         text-decoration: none;
         color: black;
@@ -592,22 +608,24 @@ buttons a:hover {
         backdrop-filter: blur(18px);
         -webkit-backdrop-filter: blur(18px);
     }
+
     .intro {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 100vh;
+        height: auto;
         color: white;
         font-family: "Google Sans Flex", sans-serif;
     }
 
     .in-card {
+        padding:5px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 70vh;
+        height: auto;
         width: 90vw;
         color: white;
         font-family: "Google Sans Flex", sans-serif;
@@ -637,15 +655,16 @@ buttons a:hover {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 100vh;
-        background-color: rgb(0, 0, 0);
+        height: auto;
+        background-color: transparent;
         color: white;
         font-family: "Google Sans Flex", sans-serif;
+        margin:0px;
+        padding:0px;
     }
 
     #card {
-        width: 85vw;
-        height: 80vh;
+        height: auto;
         border-radius: 20px;
         border: 1px solid black;
         background-image: linear-gradient(135deg, #090909, #1b1235, #090909, #1b1235);
@@ -660,6 +679,7 @@ buttons a:hover {
         justify-content: center;
         flex-direction: column;
         display: flex;
+        margin:10px;
     }
 
     #card h2 {
@@ -677,13 +697,14 @@ buttons a:hover {
     .projects {
         display: flex;
         flex-direction: column;
-        background-color: rgb(0, 0, 0);
-        height: 100vh;
+        height: auto;
         width: 100vw;
         color: white;
         align-items: center;
         justify-content: center;
         font-family: "Google Sans Flex", sans-serif;
+        padding:0px;
+        margin:0px;
     }
 
     .projects .project-cards {
@@ -695,7 +716,7 @@ buttons a:hover {
         padding: 20px;
         margin-top: 20px;
         width: 80vw;
-        height: 90vh;
+        height: auto;
         background-image: linear-gradient(150deg, rgba(7, 13, 49, 0.568), rgba(180, 93, 93, 0.13));
         border-radius: 20px;
         box-shadow: 2 8px 32px rgba(0, 0, 0, 0.3);
@@ -741,12 +762,13 @@ buttons a:hover {
         border: 1px solid rgb(255, 225, 225);
         width: 80vw;
         padding: 20px;
-        height: 60vh;
+        height: auto;;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-image: linear-gradient(145deg, #050505, #10203d, #050505, #10203d, #050505, #10203d);
+        background-image: transparent;
+        
     }
 
     .data p {
@@ -794,41 +816,56 @@ buttons a:hover {
         object-fit: fill;
     }
 }
-
-@media screen and (min-height:650px){
+/*
+@media screen and (min-height:650px) {
     .data {
-        width: 288px;
-        height: 444px;
+        width: auto;
+        height: auto;
+        padding: 20px 80px;
+        margin: 10px 50px;
     }
-.buttons a:hover {
-    background-color: #1b1235;
-    text-decoration: none;
-    color: black;
-    border: none;
-    font-family: "Google Sans Flex", sans-serif;
-    font-size: 12px;
-    cursor: pointer;
-    color: #06b6d4;
-    padding: 7px;
-    border-radius: 75px;
-    border: 1px solid black;
-    transition: all 0.4s ease-in-out;
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
-}
+
+    .data ul {
+        width: 75%;
+        margin-top: 20px;
+        margin:60px 10px;
+    }
+
+    .buttons a:hover {
+        background-color: #1b1235;
+        text-decoration: none;
+        color: black;
+        border: none;
+        font-family: "Google Sans Flex", sans-serif;
+        font-size: 12px;
+        cursor: pointer;
+        color: #06b6d4;
+        padding: 7px;
+        border-radius: 75px;
+        border: 1px solid black;
+        transition: all 0.4s ease-in-out;
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+    }
+
     #card {
-        width: 310px;
-        height: 592px;
+        width: auto;
+        height: auto;
+        padding: 20px;
+        background-color: transparent;
+        margin: 10px 30px;
     }
 
     .projects .project-cards {
-        width: 288px;
-        height: 576px;
+        width: auto;
+        height: auto;
+        padding: 20px 80px;
+        margin: 10px 50px;
     }
 
-    .project-card {}
-}
 
+}
+*/
 @media screen and (min-width:701px) and (max-width:1300px) {
     .buttons a {
         font-size: 18px;
@@ -884,7 +921,7 @@ buttons a:hover {
         align-items: center;
         display: flex;
         width: 80vw;
-        height: 60vh;
+        height: auto;
         flex-direction: column;
     }
 
@@ -973,87 +1010,94 @@ buttons a:hover {
         font-size: 22px;
     }
 
-    #arrow{
-        font-size:28px;
+    #arrow {
+        font-size: 28px;
     }
-    #arrow svg{
-        width:28px;
-        height:28px;
+
+    #arrow svg {
+        width: 28px;
+        height: 28px;
     }
-}
-@media screen and (max-height:480px){
-    .intro .in-card img {
-    width: 200px;
-    height: 150px;
-    border-radius: 0%;
-    border: 0px solid rgb(0, 0, 0);
-    margin-bottom: 20px;
-    animation: fadeIn 3s ease-out, jump 2s ease-in-out 2;
-    object-fit: cover;
-    object-position: center top;
-}
-#card h2 {
-    text-align: center;
-    padding: 10px;
-    font-size: 20px;
-    animation: reveal-in 4s ease-out;
-    animation-timeline: view();
-    animation-range: entry 10% contain 40%;
-}
-#card p {
-    text-align: center;
-    padding: 2px;
-    font-size: 14px;
-    animation: reveal-in 4s ease-out;
-    animation-timeline: view();
-    animation-range: entry 10% contain 40%;
-}
-.data ul {
-    margin-top: 10px;
-    list-style-type: none;
-    font-size: 12px;
-    border-radius: 20px;
-    border: 1px solid black;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    border: 1px solid white;
-    color: white;
-    animation: reveal-in 4s ease-out;
-    animation-timeline: view();
-    animation-range: entry 10% contain 30%;
-    width: 60%;
-	height:80%;
-}
-#img-pj img {
-    width: 200px;
-    height: 100px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-.contact h2 {
-    font-size: 30px;
-    padding: 20px;
-    outline: 2px solid white;
-    border-radius: 20px;
-    animation: reveal-in 2s ease-out;
-    animation-timeline: view();
-    animation-range: entry 10% contain 40%;
-    animation: reveal-in 4s ease-out;
-    animation-timeline: view();
-    animation-range: entry 10% contain 20%;
 }
 
-.projects h2 {
-    font-size: 30px;
-    padding: 20px;
-    outline: 2px solid white;
-    border-radius: 20px;
-    animation: reveal-in 2s ease-out;
-    animation-timeline: view();
-    animation-range: entry 10% contain 40%;
-}
+@media screen and (max-width:480px) and (max-height:700px) {
+    .intro .in-card img {
+        width: 200px;
+        height: 150px;
+        border-radius: 0%;
+        border: 0px solid rgb(0, 0, 0);
+        margin-bottom: 20px;
+        animation: fadeIn 3s ease-out, jump 2s ease-in-out 2;
+        object-fit: cover;
+        object-position: center top;
+    }
+
+    #card h2 {
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+        animation: reveal-in 4s ease-out;
+        animation-timeline: view();
+        animation-range: entry 10% contain 40%;
+    }
+
+    #card p {
+        text-align: center;
+        padding: 2px;
+        font-size: 14px;
+        animation: reveal-in 4s ease-out;
+        animation-timeline: view();
+        animation-range: entry 10% contain 40%;
+    }
+
+    .data ul {
+        margin-top: 10px;
+        list-style-type: none;
+        font-size: 12px;
+        border-radius: 20px;
+        border: 1px solid black;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border: 1px solid white;
+        color: white;
+        animation: reveal-in 4s ease-out;
+        animation-timeline: view();
+        animation-range: entry 5% contain 10%;
+        width: 70%;
+    }
+
+    #img-pj img {
+        width: 200px;
+        height: 100px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .contact h2 {
+        font-size: 30px;
+        padding: 20px;
+        outline: 2px solid white;
+        border-radius: 20px;
+        animation: reveal-in 2s ease-out;
+        animation-timeline: view();
+        animation-range: entry 10% contain 40%;
+        animation: reveal-in 4s ease-out;
+        animation-timeline: view();
+        animation-range: entry 10% contain 20%;
+    }
+
+    .projects h2 {
+        font-size: 30px;
+        padding: 20px;
+        outline: 2px solid white;
+        border-radius: 20px;
+        animation: reveal-in 2s ease-out;
+        animation-timeline: view();
+        animation-range: entry 10% contain 40%;
+    }
+
     .project-card {
         height: 60%;
         width: 80%;
@@ -1064,7 +1108,6 @@ buttons a:hover {
         gap: 20px;
         background-color: rgba(0, 0, 0, 0.5);
         border-radius: 20px;
-        padding: 60px;
         box-shadow: 2 8px 32px rgba(0, 0, 0, 0.3);
         backdrop-filter: blur(15px);
         -webkit-backdrop-filter: blur(15px);
@@ -1073,15 +1116,21 @@ buttons a:hover {
         animation-timeline: view();
         animation-range: entry 10% contain 40%;
     }
-	.data p {
+
+    .data p {
         font-size: 14px;
     }
-	    .data ul li a {
+
+    .data ul li a {
         font-size: 18px;
     }
-	    .data ul li svg {
+
+    .data ul li svg {
         width: 20px;
         height: 20px;
         transition: all 0.3s ease;
     }
+}
+@media  screen and (max-height:480px) and (max-width:700px) {
+    
 }
