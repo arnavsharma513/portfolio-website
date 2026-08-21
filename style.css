@@ -4,8 +4,6 @@
 }
 
 body {
-    /* background-image: url('bg-img6.jpg');*/
-    /* background-color: #050505;*/
     background-image: linear-gradient(135deg, #050505 0%, #13142b 40%, #2a1f5a 70%, #090909 100%);
     padding-top: 10px;
     background-size: cover;
@@ -129,7 +127,6 @@ nav {
     height: 70vh;
     border-radius: 20px;
     border: 1px solid black;
-    /* background-image: linear-gradient(125deg, rgba(41, 202, 20, 0.671), rgba(50, 156, 36, 0.493), rgba(30, 255, 0, 0.37), rgba(50, 156, 36, 0.247), rgba(30, 255, 0, 0.178), rgb(0, 0, 0)); */
     background-image: linear-gradient(135deg, #090909, #1b1235, #090909, #1b1235);
     animation: reveal-in 2s ease-out;
     animation-timeline: view();
@@ -280,8 +277,7 @@ nav {
     direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px;
-
+    margin: 20px 0px;
 }
 
 .contact h2 {
@@ -309,7 +305,6 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /*   background-image: linear-gradient(145deg, #050505, #10203d, #050505, #10203d, #050505, #10203d);*/
     background-color: rgba(255, 255, 255, 0.021);
     animation: reveal-in 2s ease-out;
     animation-timeline: view();
@@ -444,13 +439,14 @@ nav {
 }
 
 .footer {
-    width: 100vw;
+    width: 100%;
     height: 50px;
-    font-size: 10px;
+    font-size: 12px;
     background-color: #333;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .footer svg {
@@ -469,6 +465,95 @@ nav {
 
 .title-pj p {
     font-size: 16px;
+}
+
+.icons {
+    border: 1px solid white;
+    border-radius: 15px;
+    width: auto;
+    padding: 40px;
+    margin: 20px 70px;
+    text-align: center;
+    animation: reveal-in 2s ease-in-out;
+}
+
+.icons_title h2 {
+    font-family: "Google Sans Flex", sans-serif;
+    color: antiquewhite;
+    padding-bottom: 10px;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.logos span {
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    align-items: center;
+    font-family: "Google Sans Flex", sans-serif;
+    border: 0.5px solid antiquewhite;
+    border-radius: 15px;
+    padding: 4px;
+}
+
+.logos span img {
+    width: 48px;
+    height: 48px;
+    padding-bottom: 5px;
+}
+
+.logo_used {
+    margin: 3px;
+}
+
+.logo_used span img {
+    width: 26px;
+    height: 26px;
+}
+
+#one {
+    animation: scroll 1s ease-in-out;
+}
+
+#two {
+    animation: scroll 2s ease-in-out;
+}
+
+#three {
+    animation: scroll 3s ease-in-out;
+}
+
+#four {
+    animation: scroll 4s ease-in-out;
+}
+
+#five {
+    animation: scroll 5s ease-in-out;
+}
+
+#six {
+    animation: scroll 6s ease-in-out;
+}
+
+#seven {
+    animation: scroll 7s ease-in-out;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(2000%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
 }
 
 @keyframes jump {
@@ -620,7 +705,7 @@ nav {
     }
 
     .in-card {
-        padding:5px;
+        padding: 5px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -659,8 +744,8 @@ nav {
         background-color: transparent;
         color: white;
         font-family: "Google Sans Flex", sans-serif;
-        margin:0px;
-        padding:0px;
+        margin: 0px;
+        padding: 0px;
     }
 
     #card {
@@ -679,7 +764,7 @@ nav {
         justify-content: center;
         flex-direction: column;
         display: flex;
-        margin:10px;
+        margin: 10px;
     }
 
     #card h2 {
@@ -703,8 +788,8 @@ nav {
         align-items: center;
         justify-content: center;
         font-family: "Google Sans Flex", sans-serif;
-        padding:0px;
-        margin:0px;
+        padding: 0px;
+        margin: 0px;
     }
 
     .projects .project-cards {
@@ -762,13 +847,14 @@ nav {
         border: 1px solid rgb(255, 225, 225);
         width: 80vw;
         padding: 20px;
-        height: auto;;
+        height: auto;
+        ;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         background-image: transparent;
-        
+
     }
 
     .data p {
@@ -815,20 +901,46 @@ nav {
         border: 0px solid black;
         object-fit: fill;
     }
-}
-/*
-@media screen and (min-height:650px) {
-    .data {
-        width: auto;
-        height: auto;
-        padding: 20px 80px;
-        margin: 10px 50px;
+
+    .icons {
+        margin: 10px;
     }
 
-    .data ul {
-        width: 75%;
-        margin-top: 20px;
-        margin:60px 10px;
+    .logos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .icons span {
+        margin: 10px;
+    }
+
+    #one {
+        animation: none;
+    }
+
+    #two {
+        animation: none;
+    }
+
+    #three {
+        animation: none;
+    }
+
+    #four {
+        animation: none;
+    }
+
+    #five {
+        animation: none;
+    }
+
+    #six {
+        animation: none;
+    }
+
+    #seven {
+        animation: none;
     }
 
     .buttons a:hover {
@@ -847,25 +959,8 @@ nav {
         backdrop-filter: blur(18px);
         -webkit-backdrop-filter: blur(18px);
     }
-
-    #card {
-        width: auto;
-        height: auto;
-        padding: 20px;
-        background-color: transparent;
-        margin: 10px 30px;
-    }
-
-    .projects .project-cards {
-        width: auto;
-        height: auto;
-        padding: 20px 80px;
-        margin: 10px 50px;
-    }
-
-
 }
-*/
+
 @media screen and (min-width:701px) and (max-width:1300px) {
     .buttons a {
         font-size: 18px;
@@ -1130,7 +1225,4 @@ nav {
         height: 20px;
         transition: all 0.3s ease;
     }
-}
-@media  screen and (max-height:480px) and (max-width:700px) {
-    
 }

@@ -1,13 +1,14 @@
 <!doctype html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" chartset="UTF-8">   
-   <title>Arnav Sharma | Portfolio | A BCA student | Web Developer | MERN Stack</title>
-   	<meta name="description" content=" Explore portfolio of Arnav Sharma, a Computer Science student and a passionate web developer. creating Responsive and User-Friendly websites that combine clean design with practical functionality. Currently building my skills in HTML, CSS, JavaScript, React, Node.js and full-stack web development and gaining experience in web development.Emerging Web Developer In India">
-	<meta name="robots" content="index, follow">
-	<link rel="canonical" href="https://arnavcs.netlify.app">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" chartset="UTF-8">
+    <title>Arnav Sharma | Portfolio | A BCA student | Web Developer | MERN Stack</title>
+    <meta name="description"
+        content=" Explore portfolio of Arnav Sharma, a Computer Science student and a passionate web developer. creating Responsive and User-Friendly websites that combine clean design with practical functionality. Currently building my skills in HTML, CSS, JavaScript, React, Node.js and full-stack web development and gaining experience in web development.Emerging Web Developer In India">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://arnavcs.netlify.app">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/svg+xml" href="favicon.png">
+    <link rel="icon" type="image/svg+xml" href="icons/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -31,7 +32,7 @@
     <main>
         <div id="51" class="intro">
             <div class="in-card">
-                <img src="pp2.webp" alt="Profile Picture" class="profile-pic">
+                <img src="icons/pp2.webp" alt="Profile Picture" class="profile-pic">
                 <h1>Hi, I'm Arnav Sharma</h1>
                 <p>Welcome to my portfolio</p>
             </div>
@@ -45,6 +46,20 @@
                 </svg></a>
         </div>
     </main>
+    <div id="#13" class="icons">
+        <div class="icons_title">
+            <h2>Tech Stack</h2>
+        </div>
+        <div class="logos">
+            <span id="one"><img src="icons/css_icon.png" alt="CSS">CSS 3</span>
+            <span id="two"><img src="icons/html_icon.png" alt="HTML">HTML 5</span>
+            <span id="three"><img src="icons/js_icon.png" alt="JS">JS</span>
+            <span id="four"><img src="icons/nodejs_icon.png" alt="NODE JS">NODE JS</span>
+            <span id="five"><img src="icons/ex_js_icon.png" alt="EXPRESS JS">EXPRESS JS</span>
+            <span id="six"><img src="icons/mongodb_icon.png" alt="MONGO DB">MONGO DB</span>
+            <span id="seven"><img src="icons/sql_icon.png" alt="SQL">SQL</span>
+        </div>
+    </div>
     <div id="32" class="about">
         <div id="card">
             <h2>About Me</h2>
@@ -63,11 +78,15 @@
         <h2>Projects</h2>
         <div class="project-cards">
             <div class="project-card">
-                <div id="img-pj"> <a href="https://arnavne.netlify.app" target="_blank"><img src="pj1.webp"
+                <div id="img-pj"> <a href="https://arnavne.netlify.app" target="_blank"><img src="icons/pj1.webp"
                             alt="Project 1"></a></div>
 
                 <div id="title-pj">
                     <h3>Netflix India Clone</h3>
+                    <div class="logo_used">
+                        <span><img src="icons/html_icon.png"></span>
+                        <span><img src="icons/css_icon.png"></span>
+                    </div>
                     <p>Netflix India clone built with HTML, CSS only. the site features a responsive design for all
                         screen sizes and devices.</p>
                     <a href="https://arnavne.netlify.app" target="_blank">
@@ -82,13 +101,20 @@
                     </a>
                 </div>
             </div>
-             <div class="project-card">
-                <div id="img-pj"> <a href="https://raildock.netlify.app" target="_blank"><img src="pj2.webp"
+            <div class="project-card">
+                <div id="img-pj"> <a href="https://raildock.netlify.app" target="_blank"><img src="icons/pj2.webp"
                             alt="Project 2"></a></div>
 
                 <div id="title-pj">
                     <h3>RAIL DOCK</h3>
-                    <p>RAIL DOCK is a modern web application designed for seamless integration with Indian railway systems. It provides a use-friendly interface for getting train information,PNR Status, and more.</p>
+                    <div class="logo_used">
+                        <span><img src="icons/html_icon.png"></span>
+                        <span><img src="icons/css_icon.png"></span>
+                        <span><img src="icons/js_icon.png"></span>
+                    </div>
+                    <p>RAIL DOCK is a modern web application designed for seamless integration with Indian railway
+                        systems. It provides a use-friendly interface for getting train information,PNR Status, and
+                        more.</p>
                     <a href="https://raildock.netlify.app" target="_blank">
                         <div id="arrow"> Visit<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
                                 height="24" color="currentColor" fill="none" stroke="currentColor" stroke-width="1.5"
@@ -97,8 +123,9 @@
                                 <path
                                     d="M8 6.18791C8 6.18791 16.0479 5.50949 17.2692 6.73079C18.4906 7.95209 17.812 16 17.812 16"
                                     stroke-linejoin="round"></path>
-                            </svg></div>
+                            </svg> </div>
                     </a>
+
                 </div>
             </div>
         </div>
@@ -158,7 +185,8 @@
                 d="M15 14C15 15.1046 14.1046 16 13 16H12C11.0681 16 10.6022 16 10.2346 15.8478C9.74458 15.6448 9.35523 15.2554 9.15224 14.7654C9 14.3978 9 13.9319 9 13V11C9 10.0681 9 9.60218 9.15224 9.23463C9.35523 8.74458 9.74458 8.35523 10.2346 8.15224C10.6022 8 11.0681 8 12 8H13C14.1046 8 15 8.89543 15 10"
                 stroke-linecap="round"></path>
         </svg> ARNAV SHARMA 2026
-        <p>This site is currently Under Development and may have bugs and technical glitches last Updated:15-08-2026 11:51 IST</p>
+        <p>This site is currently Under Development and may have bugs and technical glitches last Updated:22-08-2026
+            00:31 IST</p>
     </div>
 </body>
 <html>
