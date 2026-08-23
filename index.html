@@ -8,7 +8,7 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://arnavcs.netlify.app">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/svg+xml" href="favicon.png">
+    <link rel="icon" type="image/svg+xml" href="icons/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,11 +21,19 @@
         <div class="logo">
             Arnav Sharma
         </div>
-        <div class="buttons">
+        <div class="buttons" id="myTopnav">
             <a href="#51">Home</a>
             <a href="#32">About Me</a>
             <a href="#65">Projects</a>
             <a href="#77">Contact Me</a>
+            <a href="javascript:void(0);" class="ham_icon" onclick="myFunction()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff"
+                    fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 5L20 5"></path>
+                    <path d="M4 12L20 12"></path>
+                    <path d="M4 19L20 19"></path>
+                </svg>
+            </a>
         </div>
     </nav>
     <div class="progress"></div>
@@ -58,6 +66,7 @@
             <span id="five"><img src="ex_js_icon.png" alt="EXPRESS JS">EXPRESS JS</span>
             <span id="six"><img src="mongodb_icon.png" alt="MONGO DB">MONGO DB</span>
             <span id="seven"><img src="sql_icon.png" alt="SQL">SQL</span>
+            <span id="eight"><img src="tailwind_icon.png" alt="TAILWIND CSS">TAILWIND</span>
         </div>
     </div>
     <div id="32" class="about">
@@ -185,8 +194,9 @@
                 d="M15 14C15 15.1046 14.1046 16 13 16H12C11.0681 16 10.6022 16 10.2346 15.8478C9.74458 15.6448 9.35523 15.2554 9.15224 14.7654C9 14.3978 9 13.9319 9 13V11C9 10.0681 9 9.60218 9.15224 9.23463C9.35523 8.74458 9.74458 8.35523 10.2346 8.15224C10.6022 8 11.0681 8 12 8H13C14.1046 8 15 8.89543 15 10"
                 stroke-linecap="round"></path>
         </svg> ARNAV SHARMA 2026
-        <p>This site is currently Under Development and may have bugs and technical glitches last Updated:22-08-2026
-            00:31 IST</p>
+        <p>This site is currently Under Development and may have bugs and technical glitches last Updated:23-08-2026
+            11:48 IST</p>
     </div>
+    <script src="script.js"></script>
 </body>
 <html>
