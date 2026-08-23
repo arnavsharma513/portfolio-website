@@ -15,7 +15,7 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 13px;
-    background-color: rgb(15, 15, 15, 0.45);
+    background-color: rgba(15, 15, 15, 0.1);
     height: 70px;
     align-items: center;
     width: 90vw;
@@ -34,6 +34,7 @@ nav {
 .buttons {
     display: flex;
     gap: 14px;
+    align-items: center;
 }
 
 .logo {
@@ -50,7 +51,7 @@ nav {
     font-size: 20px;
     cursor: pointer;
     color: #06b6d4;
-    padding: 7px;
+    padding: 9px;
     border-radius: 75px;
     border: 1px solid black;
     transition: all 0.4s ease-in-out;
@@ -59,11 +60,11 @@ nav {
 }
 
 .buttons a:hover {
-    font-size: 25px;
-    padding: 7px;
-    border-radius: 5px;
+    font-size: 20px;
+    padding: 11px;
+    border-radius: 20px;
     border: 1px solid white;
-    font-weight: bold;
+    font-weight: 500;
     color: white;
 }
 
@@ -72,9 +73,10 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: auto;
     color: white;
     font-family: "Google Sans Flex", sans-serif;
+    margin: 15px;
 }
 
 .in-card {
@@ -82,7 +84,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 70vh;
+    height: auto;
     width: 50vw;
     color: white;
     font-family: "Google Sans Flex", sans-serif;
@@ -91,23 +93,126 @@ nav {
     -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 2 8px 32px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
     border-radius: 40px;
     animation: nav-in 2s ease-out;
     margin: 10px;
-
+    padding: 20px;
 }
 
 .intro .in-card img {
-    width: 300px;
-    height: 250px;
+    width: 250px;
+    height: 200px;
     border-radius: 0%;
     border: 0px solid rgb(0, 0, 0);
     margin-bottom: 20px;
     animation: fadeIn 3s ease-out, jump 2s ease-in-out 2;
     object-fit: cover;
     object-position: center top;
+    padding-top: 12px;
 
+}
+
+.icons {
+
+    border-radius: 15px;
+    width: auto;
+    padding: 20px;
+    margin: 20px 70px;
+    text-align: center;
+    animation: reveal-in 2s ease-in-out;
+    background-color: rgb(15, 15, 15, 0.35);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 2 8px 32px rgba(0, 0, 0, 0.3);
+    z-index: 1003;
+}
+
+.icons_title h2 {
+    font-family: "Google Sans Flex", sans-serif;
+    color: antiquewhite;
+    padding-bottom: 10px;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.logos span {
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    align-items: center;
+    font-family: "Google Sans Flex", sans-serif;
+    border-radius: 15px;
+    padding: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 2 8px 32px rgba(0, 0, 0, 0.3);
+    width: 10%;
+    transition: all 0.4s ease-in-out;
+}
+
+.logos span:hover {
+    border: 3px solid rgba(255, 255, 255, 0.473);
+    font-weight: 500;
+}
+
+.logos span img {
+    width: 48px;
+    height: 48px;
+    padding-bottom: 5px;
+}
+
+.logo_used {
+    margin: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.logo_used span img {
+    width: 26px;
+    height: 26px;
+}
+
+#one {
+    animation: scroll 1s ease-in-out;
+}
+
+#two {
+    animation: scroll 2s ease-in-out;
+}
+
+#three {
+    animation: scroll 3s ease-in-out;
+}
+
+#four {
+    animation: scroll 4s ease-in-out;
+}
+
+#five {
+    animation: scrollRev 4s ease-in-out;
+}
+
+#six {
+    animation: scrollRev 3s ease-in-out;
+}
+
+#seven {
+    animation: scrollRev 2s ease-in-out;
+}
+
+#seven img {
+    filter: invert(100);
+}
+
+#eight {
+    animation: scrollRev 1s ease-in-out;
 }
 
 .about {
@@ -124,7 +229,7 @@ nav {
 
 #card {
     width: 70vw;
-    height: 70vh;
+    height: auto;
     border-radius: 20px;
     border: 1px solid black;
     background-image: linear-gradient(135deg, #090909, #1b1235, #090909, #1b1235);
@@ -295,12 +400,11 @@ nav {
 
 .data {
     margin-top: 20px;
-    height: 60vh;
+    height: 75%;
     border-radius: 20px;
     border: 1px solid rgb(255, 225, 225);
     width: 70vw;
     padding: 20px;
-    height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -355,7 +459,7 @@ nav {
 
 .data ul li:nth-child(1):hover {
     background-color: rgb(255, 255, 255);
-    transform: scale(1.06);
+    transform: scale(1.02);
     color: black;
     border: 2px solid black;
 }
@@ -371,7 +475,7 @@ nav {
 
 .data ul li:nth-child(2):hover {
     background-color: rgb(255, 255, 255);
-    transform: scale(1.06);
+    transform: scale(1.02);
     color: black;
     border: 2px solid black;
 }
@@ -388,7 +492,7 @@ nav {
 
 .data ul li:nth-child(3):hover {
     background-color: rgb(255, 255, 255);
-    transform: scale(1.06);
+    transform: scale(1.02);
     color: black;
     border: 2px solid black;
 }
@@ -467,88 +571,23 @@ nav {
     font-size: 16px;
 }
 
-.icons {
-    border: 1px solid white;
-    border-radius: 15px;
-    width: auto;
-    padding: 40px;
-    margin: 20px 70px;
-    text-align: center;
-    animation: reveal-in 2s ease-in-out;
-}
-
-.icons_title h2 {
-    font-family: "Google Sans Flex", sans-serif;
-    color: antiquewhite;
-    padding-bottom: 10px;
-}
-
-.logos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.logos span {
-    margin: 10px 20px;
-    display: flex;
-    flex-direction: column;
-    color: aliceblue;
-    align-items: center;
-    font-family: "Google Sans Flex", sans-serif;
-    border: 0.5px solid antiquewhite;
-    border-radius: 15px;
-    padding: 4px;
-}
-
-.logos span img {
-    width: 48px;
-    height: 48px;
-    padding-bottom: 5px;
-}
-
-.logo_used {
-    margin: 3px;
-}
-
-.logo_used span img {
-    width: 26px;
-    height: 26px;
-}
-
-#one {
-    animation: scroll 1s ease-in-out;
-}
-
-#two {
-    animation: scroll 2s ease-in-out;
-}
-
-#three {
-    animation: scroll 3s ease-in-out;
-}
-
-#four {
-    animation: scroll 4s ease-in-out;
-}
-
-#five {
-    animation: scroll 5s ease-in-out;
-}
-
-#six {
-    animation: scroll 6s ease-in-out;
-}
-
-#seven {
-    animation: scroll 7s ease-in-out;
+.ham_icon{
+    display: none;
 }
 
 @keyframes scroll {
     from {
         transform: translateX(2000%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes scrollRev {
+    from {
+        transform: translateX(-2000%);
     }
 
     to {
@@ -654,46 +693,33 @@ nav {
         font-size: 20px;
     }
 
-    .buttons {
-        display: flex;
-        gap: 3px;
-        margin-left: 4px;
+    .buttons a:not(.ham_icon) {
+        display: none;
     }
-
-    .buttons a {
-        background-color: #1b1235;
-        text-decoration: none;
-        color: black;
-        border: none;
-        font-family: "Google Sans Flex", sans-serif;
-        font-size: 12px;
-        cursor: pointer;
-        color: #06b6d4;
-        padding: 7px;
-        border-radius: 75px;
-        border: 1px solid black;
-        transition: all 0.4s ease-in-out;
-        backdrop-filter: blur(18px);
-        -webkit-backdrop-filter: blur(18px);
+    .ham_icon {
+        display: block;
     }
-
-    buttons a:hover {
-        background-color: #1b1235;
-        text-decoration: none;
-        color: black;
-        border: none;
-        font-family: "Google Sans Flex", sans-serif;
-        font-size: 12px;
-        cursor: pointer;
-        color: #06b6d4;
-        padding: 7px;
-        border-radius: 75px;
-        border: 1px solid black;
-        transition: all 0.4s ease-in-out;
-        backdrop-filter: blur(18px);
-        -webkit-backdrop-filter: blur(18px);
+     .buttons {
+        display: block;
+        z-index:1005;
     }
+    .buttons.responsive a:not(.ham_icon) {
+        display: block;
 
+    }
+    .buttons.responsive{
+        margin-top:155px;
+        border:0.5px solid wheat;
+        background-color:#13142b50;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    .buttons.responsive a{
+        margin:5px;
+    }
+    .buttons.responsive a.ham_icon{
+        display: none;
+    }
     .intro {
         display: flex;
         flex-direction: column;
@@ -715,13 +741,13 @@ nav {
         color: white;
         font-family: "Google Sans Flex", sans-serif;
         background-color: rgb(15, 15, 15, 0.35);
-        backdrop-filter: blur(15px);
-        -webkit-backdrop-filter: blur(15px);
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
         border: 1px solid rgba(255, 255, 255, 0.2);
         box-shadow: 2 8px 32px rgba(0, 0, 0, 0.3);
-        z-index: 1003;
         border-radius: 40px;
         animation: nav-in 2s ease-out;
+        z-index:none;
     }
 
     .intro .in-card img {
@@ -913,34 +939,7 @@ nav {
 
     .icons span {
         margin: 10px;
-    }
-
-    #one {
-        animation: none;
-    }
-
-    #two {
-        animation: none;
-    }
-
-    #three {
-        animation: none;
-    }
-
-    #four {
-        animation: none;
-    }
-
-    #five {
-        animation: none;
-    }
-
-    #six {
-        animation: none;
-    }
-
-    #seven {
-        animation: none;
+        width: auto;
     }
 
     .buttons a:hover {
@@ -949,7 +948,6 @@ nav {
         color: black;
         border: none;
         font-family: "Google Sans Flex", sans-serif;
-        font-size: 12px;
         cursor: pointer;
         color: #06b6d4;
         padding: 7px;
@@ -989,11 +987,6 @@ nav {
         animation: nav-in 2s ease-out;
     }
 
-    .intro .in-card img {
-        width: 600px;
-        height: 500px;
-    }
-
     #card {
         width: 80vw;
         height: 70vh;
@@ -1008,7 +1001,6 @@ nav {
     #card p {
         text-align: center;
         padding: 16px;
-        font-size: 32px;
     }
 
     .projects .project-cards {
@@ -1026,7 +1018,7 @@ nav {
 
     .data {
         width: 80vw;
-        height: 70vh;
+        height: auto;
         gap: 30px;
     }
 
@@ -1063,8 +1055,8 @@ nav {
         z-index: 1002;
         bottom: 20px;
         right: 20px;
-        width: 90px;
-        height: 90px;
+        width: 60px;
+        height: 60px;
         border-radius: 50%;
         border: 0px solid black;
         object-fit: fill;
@@ -1112,6 +1104,20 @@ nav {
     #arrow svg {
         width: 28px;
         height: 28px;
+    }
+
+    .icons {
+        margin: 40px;
+    }
+
+    .logos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .icons span {
+        margin: 10px;
+        width: auto;
     }
 }
 
@@ -1197,7 +1203,6 @@ nav {
         height: 60%;
         width: 80%;
         display: flex;
-        /* flex-direction: column; */
         align-items: center;
         justify-content: center;
         gap: 20px;
